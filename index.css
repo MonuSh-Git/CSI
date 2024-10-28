@@ -1,0 +1,326 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+.header {
+    background-color: #202020;
+    padding: 10px 0;
+    color: #fff;
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #ffb700;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.banner-text {
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.5rem;
+}
+
+
+.aside {
+    max-width: 400px;
+    margin: 144px auto;
+    text-align: center;
+    position: absolute;
+    right: 2%;
+    top: 1%;
+    background-color: rgb(204, 204, 204, 0.5);
+    padding: 12px;
+    border-radius: 10px
+}
+
+.aside h1 {
+    color: #333;
+}
+
+.aside button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-articles {
+    background-color: yellow;
+}
+
+.login {
+    background-color: red;
+    color: white;
+}
+
+.register {
+    background-color: lightblue;
+}
+
+.institute-registration {
+    background-color: green;
+    color: white;
+}
+
+.member-registration {
+    background-color: teal;
+    color: white;
+}
+
+.login-institute-member {
+    background-color: lightgray;
+}
+
+.login-before-2021 {
+    background-color: darkgray;
+    color: white;
+}
+
+.submit-chapter-details {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.membership-fee {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.bank-details {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.about{
+    background-color: rgb(0, 11, 114, 0.8);
+    padding: 10px;
+    margin: 9px;
+    margin-inline: -60px;
+    border-radius: 10px;
+    color: white;
+}
+
+.about:hover{
+    background-color: rgb(0, 11, 114);
+    transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 20px 0;
+}
+.box{
+    display: flex;
+    gap: 10px;
+}
+.inner-box {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.inner-box:hover {
+    transform: scale(1.01);
+} 
+
+.inner-box::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: #007bff; /* Blue color */
+    border-radius: 50%;
+    transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease;
+    z-index: 0;
+}
+
+.inner-box:hover::before {
+    width: 300%;
+    height: 300%;
+    top: -50%;
+    left: -50%;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: #333;
+}
+
+.service-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+h4 a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.text {
+    margin: 10px 0;
+    color: #333232;
+}
+
+.more-detail {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.more-detail:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.membership{
+    margin: 40px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color:rgb(148, 148, 175);
+    text-align: center;
+    height: 100px;
+    padding: 40px;
+    background: radial-gradient(rgba(153, 153, 160, 0.527), rgb(0, 0, 0))
+    
+}
+
+.Searchbox{
+    padding: 10px;
+    border: none;
+}
+#button button{
+    padding: 10px;
+}
+#button a{
+    text-decoration: none;
+    color:black;
+}
+.lastfoot{
+    background-color: rgb(23, 11, 34);
+}
+.lastfoot{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 350px auto auto auto;
+    color: azure;
+    height: 500px;
+    padding: 30px;
+    justify-content: center;
+}
+.startbox{
+    margin-top: 20px;
+    padding: 30px;
+}
+.startbox p{
+    padding: 5px;
+    line-height: 30px;
+}
+.firstbox{
+    margin-top: 20px;
+    margin-left: 60px;
+    padding: 30px;
+}
+.firstbox ul{
+    margin-top: 30px;
+}
+.firstbox li{
+    padding: 8px;
+    list-style-type:square;
+}
+.firstbox a{
+    text-decoration: none;
+    color: white;
+
+}
+.firstbox h2{
+   text-decoration: underline;
+}
+.base{
+    background-color: rgb(43, 41, 33);
+    color: white;
+    height: 90px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+
